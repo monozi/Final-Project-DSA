@@ -411,11 +411,20 @@ home_lithit_fourthshelf.place(x = 35, y = 390)
 home_lithit_button = customtkinter.CTkButton(home_lithit_frame_outer,width=150,height=30,font=("Quando",20),fg_color="#737373",corner_radius=0,text="Literary Hits")
 home_lithit_button.place(x = 10, y = 10)
 
+
 home_arrowlit_button_img = customtkinter.CTkImage((Image.open("D:\Downloads\Final-Project-DSA-main\STACKRead\icons\kanan.png")))
 home_arrowlit_button_label = customtkinter.CTkButton(home_frame, image=home_arrowlit_button_img, width=25, height=25, fg_color="transparent", corner_radius=0, text="")
 home_arrowlit_button_label.place(x = 635, y = 270)
 
-home_lastread_frame_outer = customtkinter.CTkFrame(home_frame,width=485,height=510,fg_color="transparent",corner_radius=0)
+lastread_invi_frame = customtkinter.CTkFrame(home_frame,width=485,height=550,fg_color="white",corner_radius=0)
+lastread_invi_frame.place(x = 680, y = 260)
+
+home_lastread_img = customtkinter.CTkImage((Image.open("D:\Downloads\Final-Project-DSA-main\STACKRead\icons\lastread.png")), size=(115, 30))
+home_lastread_button = customtkinter.CTkButton(lastread_invi_frame, image=home_lastread_img, width=115, height=30, fg_color="#F2E8BD", corner_radius=0, text="")
+home_lastread_button.place(x = 675, y = 250)
+# home_lastread_button.place(x = 675, y = 269)
+
+home_lastread_frame_outer = customtkinter.CTkFrame(lastread_invi_frame,width=485,height=510,fg_color="transparent",corner_radius=0)
 home_lastread_frame_outer.place(x = 670, y = 260)
 
 home_lastread_frame_inner = customtkinter.CTkFrame(home_lastread_frame_outer,width=642,height=642,fg_color="#B88B68",corner_radius=0)
@@ -433,8 +442,11 @@ home_lastread_thirdshelf.place(x = 35, y = 280)
 home_lastread_fourthshelf = customtkinter.CTkFrame(home_lastread_frame_outer, width=420, height=100, fg_color="#614D40", corner_radius=0)
 home_lastread_fourthshelf.place(x = 35, y = 390)
 
-home_lastread_button = customtkinter.CTkButton(home_lastread_frame_outer,width=150,height=30,font=("Quando",20),fg_color="#737373",corner_radius=0,text="Last Read")
-home_lastread_button.place(x = 10, y = 10)
+# home_lastread_button = customtkinter.CTkButton(home_lastread_frame_outer,width=150,height=30,font=("Quando",20),fg_color="#737373",corner_radius=0,text="Last Read")
+# home_lastread_button.place(x = 10, y = 10)
+# home_lastread_img = customtkinter.CTkImage((Image.open("D:\Downloads\Final-Project-DSA-main\STACKRead\icons\lastread.png")), size=(115, 30))
+# home_lastread_button = customtkinter.CTkButton(home_frame, image=home_lastread_img, width=115, height=30, fg_color="transparent", corner_radius=0, text="")
+# home_lastread_button.place(x = 675, y = 269)
 
 home_arrowlast_button_img = customtkinter.CTkImage((Image.open("D:\Downloads\Final-Project-DSA-main\STACKRead\icons\kanan.png")))
 home_arrowlast_button_label = customtkinter.CTkButton(home_frame, image=home_arrowlast_button_img, width=25, height=25, fg_color="transparent", corner_radius=0, text="")
